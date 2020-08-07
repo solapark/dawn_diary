@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src http://* 'self' 'unsafe-inline'; media-src * blob:">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+      <meta charset="utf-8">
+
+      <link rel="stylesheet" type="text/css" href="jquery.mobile/jquery.mobile-1.4.5.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+
+      <script type="text/javascript" charset="utf-8" src="jquery.mobile/jquery-1.12.2.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+
+<!--
+      <div data-role="page" id="page_diary">
+        <div role="main" class="ui-content">
+          <div id='head' class="ui-body ui-body-a">
+            <form id = "form" autocomplete="off">
+                <input type="text" name="subject"  value=""  placeholder="제목,"autocomplete="off"/>
+              <textarea name="content" id="content" rows='30'></textarea>
+              <div class="ui-grid-c" id='submit'>
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b"></div>
+                <div class="ui-block-c"><button class="ui-btn">취소</button></div>
+                <div class="ui-block-d"><button class="ui-btn">저장</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+!-->
+      <div data-role="page" id="page_calender">
+        <div data-role="header">
+          <div class="ui-grid-b">
+            <div class="ui-block-a"><button class="ui-btn">.</button></div>
+            <div class="ui-block-b"><button class="ui-btn">.</button></div>
+            <div class="ui-block-c"><button class="ui-btn">.</button></div>
+          </div>
+        </div>
+        <div role="main" class="ui-content">
+          <div id='subject' class="ui-body ui-body-a">20년 6월, 열 한 개의 새벽</div>
+          <table id="calendar" align="center">
+            <thead>
+              <tr class="btn-wrap clearfix">
+                <td>
+                  <label id="prev">
+                      &#60;
+                  </label>
+                </td>
+                <td align="center" id="current-year-month" colspan="5"></td>
+                <td>
+                  <label id="next">
+                      &#62;
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                  <td class = "sun" align="center">월</td>
+                  <td align="center">화</td>
+                  <td align="center">수</td>
+                  <td align="center">목</td>
+                  <td align="center">금</td>
+                  <td align="center">토</td>
+                  <td class= "sat" align="center">일</td>
+                </tr>
+            </thead>
+            <tbody id="calendar-body" class="calendar-body"></tbody>
+          </table>
+        </div>
+        <div data-role="footer">
+          <div class="ui-grid-b">
+            <div class="ui-block-a"></div>
+            <div class="ui-block-b"><button class="ui-btn">.</button></div>
+            <div class="ui-block-c"></div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

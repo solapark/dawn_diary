@@ -1,0 +1,16 @@
+#form{
+  border: 1px solid red;
+}
+
+#content{
+  min-height: 70%;
+  max-height: 70%;
+}
+
+textarea{
+  resize :  none;
+}
+
+.ui-btn{
+  padding: 0 !important;
+}
