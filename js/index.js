@@ -121,6 +121,7 @@ function showCalendar(){
         monthCnt++;
         calendarBody.appendChild($tr);
     }
+    currentTitle.innerHTML = monthList[first.getMonth()] + '&nbsp;&nbsp;&nbsp;&nbsp;'+ first.getFullYear();    
 }
 
 function removeCalendar(){
